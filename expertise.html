@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expertise | Dr. Kandula Eswara Sai Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#0ea5e9',
+                        accent: '#f8fafc',
+                        text: '#334155',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-text bg-white antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-atom text-secondary"></i>
+                <span>Dr. Eswara Sai Kumar</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm">
+                <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="hover:text-secondary transition-colors">About</a>
+                <a href="expertise.html" class="text-secondary font-bold">My Expertise</a>
+                <a href="experience.html" class="hover:text-secondary transition-colors">Experience</a>
+                <a href="blogs.html" class="hover:text-secondary transition-colors">Blogs & Events</a>
+                <a href="contact.html" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary transition-colors shadow-lg">Contact Me</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-lg absolute w-full left-0 top-full">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block hover:text-secondary">Home</a>
+                <a href="about.html" class="block hover:text-secondary">About</a>
+                <a href="expertise.html" class="block text-secondary font-bold">My Expertise</a>
+                <a href="experience.html" class="block hover:text-secondary">Experience</a>
+                <a href="blogs.html" class="block hover:text-secondary">Blogs & Events</a>
+                <a href="contact.html" class="block hover:text-secondary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex-grow pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold tracking-wider uppercase text-sm">Published Research & Contributions</span>
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-primary mt-2">My Expertise</h2>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Area 1 -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col lg:flex-row gap-8 items-start">
+                    <div class="lg:w-1/3 flex-shrink-0">
+                        <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-bone text-3xl text-secondary"></i></div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Biomechanics & Prosthesis Design</h3>
+                        <p class="text-sm text-gray-500 font-medium">Key Works: Gait Cycle Analysis, Pelvic Reconstruction</p>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <p class="text-gray-600 leading-relaxed mb-4">My doctoral and post-doctoral research extensively explored the <strong>Topology Optimization of the human hip and pelvic bones</strong>. I have developed computational models to simulate various activities of daily living, including walking, running, and single-leg stance.</p>
+                        <p class="text-gray-600 leading-relaxed mb-4">A significant portion of my work focuses on the <strong>Design of Pelvic Prostheses</strong> using multi-load approach topology optimization. By analyzing the complex loading patterns of the gait cycle, I have proposed optimal material distributions that minimize compliance and reduce stress shielding, paving the way for more durable and patient-specific orthopedic implants.</p>
+                        <div class="flex gap-2 flex-wrap mt-4">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Gait Cycle</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Structural Optimization</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Medical Implants</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Area 2 -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col lg:flex-row gap-8 items-start">
+                    <div class="lg:w-1/3 flex-shrink-0">
+                        <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-atom text-3xl text-secondary"></i></div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Quantum-Inspired Optimization</h3>
+                        <p class="text-sm text-gray-500 font-medium">Key Works: Magnetic Lattices, Hybrid Algorithms</p>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <p class="text-gray-600 leading-relaxed mb-4">At <strong>BosonQ Psi</strong>, I am pioneering the application of <strong>Quantum-Inspired Evolutionary Optimization Algorithms (QIEOA)</strong>. My work involves benchmarking these algorithms on high-performance GPUs to solve large-scale engineering problems that challenge classical solvers.</p>
+                        <p class="text-gray-600 leading-relaxed mb-4">Recent contributions include the <strong>Design of Magnetic Lattices</strong> and the development of <strong>Hybrid Algorithms</strong> that combine quantum-inspired techniques with gradient-based methods. These innovations are critical for exploring vast design spaces in structural topology optimization with greater efficiency and speed.</p>
+                        <div class="flex gap-2 flex-wrap mt-4">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Quantum Computing</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">GPU Acceleration</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Evolutionary Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Area 3 -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col lg:flex-row gap-8 items-start">
+                    <div class="lg:w-1/3 flex-shrink-0">
+                        <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-microchip text-3xl text-secondary"></i></div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Computational Mechanics & AI</h3>
+                        <p class="text-sm text-gray-500 font-medium">Key Works: CNNs, SBFEM, Topological Derivatives</p>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <p class="text-gray-600 leading-relaxed mb-4">I advocate for the integration of modern computational techniques into structural design. My research includes using <strong>Convolutional Neural Networks (CNN)</strong> to accelerate topology optimization processes, effectively bridging Machine Learning with solid mechanics.</p>
+                        <p class="text-gray-600 leading-relaxed mb-4">Additionally, I have worked on <strong>Shape Optimization of Beams</strong> using the Scaled Boundary Finite Element Method (SBFEM) and B-Splines, as well as implementing <strong>Topological Derivatives</strong> as an evolutionary approach. This diverse toolkit allows me to tackle complex design constraints, such as specified fundamental natural frequencies and vibration controls.</p>
+                        <div class="flex gap-2 flex-wrap mt-4">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Machine Learning</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">SBFEM</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold rounded-full">Finite Element Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <div class="container mx-auto px-6"><p>&copy; 2025 Dr. Kandula Eswara Sai Kumar. All rights reserved.</p></div>
+    </footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

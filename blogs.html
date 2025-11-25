@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs & Events | Dr. Kandula Eswara Sai Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#0ea5e9',
+                        accent: '#f8fafc',
+                        text: '#334155',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blog-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="font-sans text-text bg-white antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-atom text-secondary"></i>
+                <span>Dr. Eswara Sai Kumar</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm">
+                <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="hover:text-secondary transition-colors">About</a>
+                <a href="expertise.html" class="hover:text-secondary transition-colors">My Expertise</a>
+                <a href="experience.html" class="hover:text-secondary transition-colors">Experience</a>
+                <a href="blogs.html" class="text-secondary font-bold">Blogs & Events</a>
+                <a href="contact.html" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary transition-colors shadow-lg">Contact Me</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-lg absolute w-full left-0 top-full">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block hover:text-secondary">Home</a>
+                <a href="about.html" class="block hover:text-secondary">About</a>
+                <a href="expertise.html" class="block hover:text-secondary">My Expertise</a>
+                <a href="experience.html" class="block hover:text-secondary">Experience</a>
+                <a href="blogs.html" class="block text-secondary font-bold">Blogs & Events</a>
+                <a href="contact.html" class="block hover:text-secondary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex-grow pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold tracking-wider uppercase text-sm">Latest Updates</span>
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-primary mt-2">Blogs, Events & Conferences</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Blog Card 1 -->
+                <a href="https://arxiv.org/abs/2510.16349" target="_blank" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all blog-card border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-900 to-slate-800 relative flex items-center justify-center">
+                        <div class="text-center p-4">
+                            <i class="fa-solid fa-file-lines text-4xl text-white/50 mb-2"></i>
+                            <span class="block text-white font-serif font-bold tracking-wide">Latest Publication</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wide">Article • Oct 2025</span>
+                            <span class="text-xs text-gray-400"><i class="fa-solid fa-link"></i> arXiv</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 line-clamp-2">Design of Magnetic Lattices with Quantum Optimization Algorithms</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-4">Exploring the application of BQPhy's Quantum-Inspired Evolutionary Optimization (QIEO) to solve complex spin-state problems in magnetic lattice structures.</p>
+                        <span class="text-secondary text-sm font-medium">Read Paper &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Blog Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all blog-card border border-gray-100 cursor-default">
+                    <div class="h-48 bg-gradient-to-br from-indigo-800 to-purple-800 relative flex items-center justify-center">
+                        <div class="text-center p-4">
+                            <i class="fa-solid fa-microphone-lines text-4xl text-white/50 mb-2"></i>
+                            <span class="block text-white font-serif font-bold tracking-wide">QIB 2025</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wide">Conference • Aug 2025</span>
+                            <span class="text-xs text-gray-400">Bengaluru</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 line-clamp-2">Quantum India Bengaluru</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-4">Delivered a technical talk on the advancements in quantum algorithms for engineering simulations at the Quantum India Bengaluru (QIB) 2025 Summit.</p>
+                        <span class="text-gray-400 text-sm text-xs">Invited Speaker</span>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all blog-card border border-gray-100 cursor-default">
+                    <div class="h-48 bg-gradient-to-tr from-slate-800 to-gray-700 relative flex items-center justify-center">
+                        <div class="text-center p-4">
+                            <i class="fa-solid fa-gavel text-4xl text-white/50 mb-2"></i>
+                            <span class="block text-white font-serif font-bold tracking-wide">Hackathon Jury</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wide">Event • Aug 2025</span>
+                            <span class="text-xs text-gray-400">Amaravati</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 line-clamp-2">Amaravati Quantum Valley Hackathon</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-4">Served as a Jury Member for the Amaravati Quantum Valley (AQV) Hackathon 2025, evaluating innovative student projects in quantum technology and deep tech.</p>
+                        <span class="text-gray-400 text-sm text-xs">Jury Member</span>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all blog-card border border-gray-100 cursor-default">
+                    <div class="h-48 bg-gradient-to-r from-teal-800 to-emerald-800 relative flex items-center justify-center">
+                        <div class="text-center p-4">
+                            <i class="fa-solid fa-users-rectangle text-4xl text-white/50 mb-2"></i>
+                            <span class="block text-white font-serif font-bold tracking-wide">Panel Discussion</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wide">Panel • 2025</span>
+                            <span class="text-xs text-gray-400">IISER Pune</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 line-clamp-2">IISER Pune Panelist</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-4">Invited as a panelist at IISER Pune to discuss the future of quantum education and the integration of quantum computing in academic research.</p>
+                        <span class="text-gray-400 text-sm text-xs">Panelist</span>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all blog-card border border-gray-100 cursor-default">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 to-indigo-600 relative flex items-center justify-center">
+                        <div class="text-center p-4">
+                            <i class="fa-solid fa-plane-up text-4xl text-white/50 mb-2"></i>
+                            <span class="block text-white font-serif font-bold tracking-wide">Research Talk</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wide">Presentation • Jan 2025</span>
+                            <span class="text-xs text-gray-400">Orlando, FL</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 line-clamp-2">AIAA SCITECH 2025 Forum</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-4">Presented research on "Hybrid Quantum-Inspired Evolutionary and Gradient-Based Optimization Algorithm for Topology Optimization in BQPhy" at the premier aerospace forum.</p>
+                        <span class="text-gray-400 text-sm text-xs">Presenter</span>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all blog-card border border-gray-100 cursor-default">
+                    <div class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 relative flex items-center justify-center">
+                        <div class="text-center p-4">
+                            <i class="fa-solid fa-chalkboard-user text-4xl text-white/50 mb-2"></i>
+                            <span class="block text-white font-serif font-bold tracking-wide">Guest Lectures</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-wide">Outreach • Ongoing</span>
+                            <span class="text-xs text-gray-400">Various Institutions</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 line-clamp-2">Academic Outreach</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-4">Regularly delivering guest lectures at engineering colleges to inspire students about the potentials of Quantum Computing and Topology Optimization.</p>
+                        <span class="text-gray-400 text-sm text-xs">Speaker</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <div class="container mx-auto px-6"><p>&copy; 2025 Dr. Kandula Eswara Sai Kumar. All rights reserved.</p></div>
+    </footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

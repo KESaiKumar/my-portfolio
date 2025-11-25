@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Dr. Kandula Eswara Sai Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#0ea5e9',
+                        accent: '#f8fafc',
+                        text: '#334155',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-text bg-white antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-atom text-secondary"></i>
+                <span>Dr. Eswara Sai Kumar</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm">
+                <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="hover:text-secondary transition-colors">About</a>
+                <a href="expertise.html" class="hover:text-secondary transition-colors">My Expertise</a>
+                <a href="experience.html" class="text-secondary font-bold">Experience</a>
+                <a href="blogs.html" class="hover:text-secondary transition-colors">Blogs & Events</a>
+                <a href="contact.html" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary transition-colors shadow-lg">Contact Me</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-lg absolute w-full left-0 top-full">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block hover:text-secondary">Home</a>
+                <a href="about.html" class="block hover:text-secondary">About</a>
+                <a href="expertise.html" class="block hover:text-secondary">My Expertise</a>
+                <a href="experience.html" class="block text-secondary font-bold">Experience</a>
+                <a href="blogs.html" class="block hover:text-secondary">Blogs & Events</a>
+                <a href="contact.html" class="block hover:text-secondary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex-grow pt-32 pb-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-serif font-bold text-primary mb-12 text-center">Professional History</h2>
+            <div class="relative border-l-2 border-gray-200 ml-3 md:ml-6 space-y-12">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow"></div>
+                    <span class="text-sm font-bold text-secondary mb-2 block">2022 - Present</span>
+                    <h3 class="text-xl font-bold text-primary">Principal Optimization Scientist</h3>
+                    <h4 class="text-gray-500 font-medium mb-2">BosonQ Psi, Bengaluru</h4>
+                    <p class="text-gray-600 text-sm">Leading research on quantum-powered engineering simulations and optimization algorithms. Developing next-gen solutions for structural analysis.</p>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-300 rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-bold text-gray-500 mb-2 block">Jan 2021 - June 2022</span>
+                    <h3 class="text-xl font-bold text-primary">Research Associate</h3>
+                    <h4 class="text-gray-500 font-medium mb-2">Indian Institute of Science (IISc), Bengaluru</h4>
+                    <p class="text-gray-600 text-sm">Conducted advanced research in the Department of Mechanical Engineering, focusing on structural mechanics and design optimization.</p>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-300 rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-bold text-gray-500 mb-2 block">July 2020 - Dec 2020</span>
+                    <h3 class="text-xl font-bold text-primary">Institute Post-Doctoral Fellow</h3>
+                    <h4 class="text-gray-500 font-medium mb-2">Indian Institute of Technology, Madras</h4>
+                    <p class="text-gray-600 text-sm">Continued doctoral research themes with a focus on application-specific topology optimization problems.</p>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-300 rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-bold text-gray-500 mb-2 block">2015 - 2020</span>
+                    <h3 class="text-xl font-bold text-primary">PhD Scholar / Researcher</h3>
+                    <h4 class="text-gray-500 font-medium mb-2">Indian Institute of Technology, Madras</h4>
+                    <p class="text-gray-600 text-sm">Focused on "Topology Optimization of the Hip Bone". Published multiple papers in reputable journals regarding structural optimization in biomechanics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <div class="container mx-auto px-6"><p>&copy; 2025 Dr. Kandula Eswara Sai Kumar. All rights reserved.</p></div>
+    </footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
